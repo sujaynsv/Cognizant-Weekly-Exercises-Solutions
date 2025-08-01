@@ -1,0 +1,29 @@
+1. Big O Notation:
+Big O notation is a mathematical representation used to express the upper limit of an algorithm's time or space complexity based on the input size (n). It allows us to evaluate and compare how algorithms perform, particularly as the data size increases. For instance, O(n) signifies that the execution time grows proportionally with the input, whereas O(log n) indicates a much slower rate of increase.
+
+2. Best, Average, and Worst-Case Scenarios for Search Operations:
+Best Case: The shortest possible time an algorithm takes (e.g., finding the target at the first position).
+
+Average Case: The typical time it takes, averaged over all possible inputs (e.g., target located somewhere mid-list).
+
+Worst Case: The longest time required (e.g., target not present or found at the last position).
+
+These cases provide insight into how a search algorithm performs under various circumstances.
+
+Analysis of Linear Search vs Binary Search
+1. Time Complexity:
+
+Linear Search: O(n) for all scenarios (best case: 1, average case: n/2, worst case: n).
+
+Binary Search: O(log n) (best case: 1, average and worst case: log n), but it needs the data to be sorted.
+
+2. Suitability:
+
+Linear search is straightforward and works with unsorted data, but becomes inefficient as data volume increases.
+
+Binary search is significantly faster with large datasets but requires sorted input, making it ideal for situations like e-commerce platforms where quick retrieval is essential.
+
+3. Recommendation:
+
+For e-commerce applications, binary search (or more efficient structures such as hash maps or search trees) is the better choice, assuming the data can be sorted or indexed for optimal performance.
+
